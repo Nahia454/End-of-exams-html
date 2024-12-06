@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar-left main-content sidebar-right"
+      "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 15px;
+  }
+  .header {
+    grid-area: header;
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

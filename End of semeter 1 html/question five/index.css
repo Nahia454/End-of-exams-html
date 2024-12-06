@@ -1,0 +1,38 @@
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "sidebar-left main-content sidebar-right"
+      "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 15px;
+ }
+ .sidebar-left {
+    grid-area: sidebar-left;
+    background: #f8f9fa;
+    padding: 20px;
+    width:25%
+}
+.main-content {
+    grid-area: main-content;
+    padding: 20px;
+    background: #fff;
+    width: 75%;
+}
+.header {
+    grid-area: header;
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.sidebar-left h2 {
+    margin-bottom: 15px;
+}
